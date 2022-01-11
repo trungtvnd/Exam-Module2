@@ -107,7 +107,7 @@ public class ContactManagement {
                 System.out.println("Input address");
                 contactEdit.setAddress(sc.nextLine());
                 System.out.println("Input birth :");
-                contactEdit.setBirth(sc.nextInt());
+                contactEdit.setBirth(sc.nextInt()); sc.nextLine();
                 contactEdit.setEmail(entryEmail());
                 if (chooseGender().trim().equals("")) {
                     System.out.println("please input gender again");
@@ -123,8 +123,6 @@ public class ContactManagement {
         } else {
             System.out.println("not Found");
         }
-        sc.nextLine();
-
     }
 
 
